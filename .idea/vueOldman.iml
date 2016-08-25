@@ -16,5 +16,6 @@
     <orderEntry type="library" name="vue-resource-DefinitelyTyped" level="application" />
     <orderEntry type="library" name="vue-router-DefinitelyTyped" level="application" />
     <orderEntry type="library" name="webpack-DefinitelyTyped" level="application" />
+    <orderEntry type="library" name="vueoldman node_modules" level="project" />
   </component>
 </module>

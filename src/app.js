@@ -5,7 +5,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import VueResource from 'vue-resource'
 import routeConfig from './router'
-import app from './main.vue'
+import app from './main'
 
 Vue.config.debug=true;
 //使用VueResource
@@ -15,10 +15,13 @@ Vue.http.options.emulateJSON = true
 //使用vuerouter
 Vue.use(VueRouter);
 const router=new VueRouter({
-    hashbang:true,
-    history:true
+    hashbang: true,
+    history: true,
+    saveScrollPosition: true,
+    suppressTransitionError: true
 });
 routeConfig(router);
 
 router.start(app,"#app");
-window.router=router
+
+window.router=router;  //用来dubugging

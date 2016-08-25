@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/vueOldman.iml" filepath="$PROJECT_DIR$/.idea/vueOldman.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/vueoldman.iml" filepath="$PROJECT_DIR$/.idea/vueoldman.iml" />
     </modules>
   </component>
 </project>
