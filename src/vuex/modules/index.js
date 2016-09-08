@@ -1,23 +1,22 @@
 /**
  * Created by Administrator on 2016/8/26.
  */
-import {GET_LISTITEM} from '../mutation-types'
+import {GET_TOPICS_FAIL,GET_TOPICS_SUCCESS} from '../mutation-types'
 
 // 初始状态
 const state={
-    Item:{
-        id:"1",
-        title:'老年大学',
-        content:'这是一个老年大学的内容',
-        imgUlr:'http://o8yu724qs.bkt.clouddn.com/iphone6s-silver-select-2015.png'
-    },
-    list:[Item]
+    topics:''
 }
+//状态变更
 const mutations={
-    [GET_LISTITEM](state,item){
-        state.Item=item;
+    [GET_TOPICS_SUCCESS](state,data){
+        state.topics=data
+    },
+    [GET_TOPICS_FAIL](state,err){
+        console.log(err);
     }
 }
 export default{
     state,mutations
 }
+

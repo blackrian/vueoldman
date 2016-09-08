@@ -3,15 +3,17 @@
  */
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import VueResource from 'vue-resource'
+// import VueResource from 'vue-resource'
 import routeConfig from './router'
 import app from './main'
 
 Vue.config.debug=true;
 //使用VueResource
-Vue.use(VueResource);
-Vue.http.options.root = process.env.NODE_ENV === 'development' ? 'src/assets/data' : '/vueOldman/static/data'
-Vue.http.options.emulateJSON = true
+// Vue.use(VueResource);
+// Vue.http.options.root = process.env.NODE_ENV === 'development' ? 'src/assets/data' : '/vueOldman/static/data'
+// Vue.http.options.emulateJSON = true
+// filters
+Vue.filter('inText',require('./filters/htmlToStr'));
 //使用vuerouter
 Vue.use(VueRouter);
 const router=new VueRouter({

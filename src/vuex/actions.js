@@ -1,20 +1,17 @@
 /**
  * Created by Administrator on 2016/8/26.
  */
+import api from '../api/home'
+import * as types from './mutation-types.js'
 
-// function makeAction(type) {
-//     return({dispatch},...args)=>dispatch(type,...args)
-// }
-export const getListItem=({dispatch})=>{
-    //Vue.http.get(url, { req: 'req body' }).then((res) => {
-        //     // 正常返回, 别忘了处理错误
-        //     dispatch(REFRESH_DATA, res.data)
-        // }, (err) => {
-        //     alert(err.message)
-        // })
-    Vue.http.get('data_list.json').then((response)=>{
-        dispatch('GET_LISTITEM',response.data)
-    },(err)=>{
+export const getTopics=({dispatch},params)=>{
+    api.getTopics(params).then(response=>{
+        console.log(response.data);
+        dispatch(types.GET_TOPICS_SUCCESS,response.data);
+    },err=>{
         console.log(err);
+        dispatch(types.GET_TOPICS_FAIL,err);
     })
+
 }
+

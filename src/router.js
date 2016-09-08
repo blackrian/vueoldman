@@ -51,7 +51,13 @@ export default function (router) {
         }
 
     })
+    router.beforeEach(({to, from, next}) => {
+        document.body.scrollTop = 0
+        next()
+    })
 
+    router.afterEach(({to}) => {
+    })
     // router.beforeEach(({to, from, next}) => {
     //     let toPath = to.path
     //     let fromPath = from.path

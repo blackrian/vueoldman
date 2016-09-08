@@ -16,12 +16,14 @@
     import NavBar from './components/nav/navbar.vue'
     import NavBarItem from './components/nav/navbarItem.vue'
     import CopyRight from './components/copyright.vue'
+    import store from './vuex/store'
     export default{
         data(){
             return{
                 isIndex:true
             }
         },
+        store,
         components:{
             NavBar,NavBarItem,CopyRight
         },

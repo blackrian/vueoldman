@@ -3,12 +3,12 @@
  */
 import Vue from 'vue'
 import Vuex from 'vuex'
-import index from './modules/index'
+import topics from './modules/index'
 
 Vue.use(Vuex)
-export default{
+export default new Vuex.Store({
     //组合各个模块
     modules:{
-        index
+        topics
     }
-}
+})

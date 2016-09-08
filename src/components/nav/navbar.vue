@@ -1,5 +1,5 @@
 <style lang="sass" scoped>
-    nav{width: 1170px; margin: 0 auto;
+    nav{width: 1170px; margin: 0 auto; height:90px;
         ul{ margin-top: 25px;}
     }
 .logo{

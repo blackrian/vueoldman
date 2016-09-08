@@ -2,7 +2,7 @@
 <project version="4">
   <component name="JavaScriptLibraryMappings">
     <file url="file://$PROJECT_DIR$" libraries="{vueoldman node_modules}" />
-    <file url="PROJECT" libraries="{babel-core-DefinitelyTyped, bootstrap-DefinitelyTyped, echarts-DefinitelyTyped, gulp-DefinitelyTyped, jquery-DefinitelyTyped, node-DefinitelyTyped, react-DefinitelyTyped, vue-DefinitelyTyped, vue-resource-DefinitelyTyped, vue-router-DefinitelyTyped, webpack-DefinitelyTyped}" />
+    <file url="PROJECT" libraries="{babel-core-DefinitelyTyped, bootstrap-DefinitelyTyped, echarts-DefinitelyTyped, es6-promise-DefinitelyTyped, gulp-DefinitelyTyped, jquery-DefinitelyTyped, node-DefinitelyTyped, react-DefinitelyTyped, vue-DefinitelyTyped, vue-resource-DefinitelyTyped, vue-router-DefinitelyTyped, vueoldman node_modules, webpack-DefinitelyTyped}" />
     <includedPredefinedLibrary name="ECMAScript 6" />
   </component>
 </project>

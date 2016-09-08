@@ -25,10 +25,10 @@ module.exports = {
             {test:/\.css$/,loader:ExtractTextPlugin.extract('style','css!autoprefixer') },
             { test: /\.scss$/, loader: ExtractTextPlugin.extract('style','css!autoprefixer!sass?sourceMap')},
             {
-                test: /\.(jpe?g|png|gif)$/i,
+                test: /.*\.(gif|png|jpe?g|svg)$/i,
                 loaders: [
-                    'url?limit=10000&name=images/[hash:8].[name].[ext]',
-                    'image-webpack?{progressive:true, optimizationLevel: 7, interlaced: false, pngquant:{quality: "65-90", speed: 4}}'
+                    'file?hash=sha512&digest=hex&name=[hash].[ext]',
+                    'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
                 ]
             },
             { test: /\.(html|tpl)$/, loader: 'html-loader' }
@@ -38,14 +38,15 @@ module.exports = {
         loaders:{
 
             // css:ExtractTextPlugin.extract('style','css!autoprefixer!sass?sourceMap')
-            css:ExtractTextPlugin.extract('style-loader','css-loader!autoprefixer-loader!sass-loader')
+            css:ExtractTextPlugin.extract('style-loader','css-loader!autoprefixer-loader!sass-loader'),
+            // img:ExtractTextPlugin.extract('img-loader',"img")
             // css: ExtractTextPlugin.extract("css"),
             // sass: ExtractTextPlugin.extract("css!sass")
         }
     },
     babel:{
-        presets:['es2015'],
-        plugins:['transform-runtime']
+        presets:['es2015',"stage-2"],
+        plugins:['transform-runtime',"add-module-exports"]
     },
     plugins:[
         new webpack.optimize.DedupePlugin(),
