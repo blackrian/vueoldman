@@ -32,7 +32,6 @@
                 getTopics
             }
         },
-
         components:{
             oldItem,joinForm
         },
