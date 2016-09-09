@@ -13,8 +13,12 @@ Vue.use(VueResource)
 
 const baseUrl = 'http://cnodejs.org/api/v1/'
 
+// http://cnodejs.org/api/v1/topic/
 export default{
     getTopics:(params)=>{
         return Vue.resource(baseUrl + 'topics').get(params);
+    },
+    setContent:(id)=>{
+        return Vue.resource(baseUrl+'topic').get(id);
     }
 }

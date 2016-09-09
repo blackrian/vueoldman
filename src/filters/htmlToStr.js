@@ -4,6 +4,7 @@
 import $ from 'jquery'
 module.exports=function (str) {
     var result='';
+    // debugger;
     result=$(str).text();
     return result;
 }

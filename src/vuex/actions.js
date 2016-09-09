@@ -6,12 +6,11 @@ import * as types from './mutation-types.js'
 
 export const getTopics=({dispatch},params)=>{
     api.getTopics(params).then(response=>{
-        console.log(response.data);
+        // console.log(response.data);
         dispatch(types.GET_TOPICS_SUCCESS,response.data);
     },err=>{
-        console.log(err);
+        // console.log(err);
         dispatch(types.GET_TOPICS_FAIL,err);
     })
-
 }
 

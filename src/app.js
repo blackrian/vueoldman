@@ -14,6 +14,7 @@ Vue.config.debug=true;
 // Vue.http.options.emulateJSON = true
 // filters
 Vue.filter('inText',require('./filters/htmlToStr'));
+Vue.filter('inHtmls',require('./filters/innerHtml'));
 //使用vuerouter
 Vue.use(VueRouter);
 const router=new VueRouter({

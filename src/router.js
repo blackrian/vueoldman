@@ -48,6 +48,12 @@ export default function (router) {
             component(resolve){
                 require(['./views/joinUs'],resolve)
             }
+        },
+        "/detail/:id":{
+            name:"detail",
+            component(resolve){
+                require(['./views/detail'],resolve)
+            }
         }
 
     })
