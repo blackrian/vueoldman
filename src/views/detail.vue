@@ -1,33 +1,44 @@
 <template>
     <div class="detail-page">
-        {{detail.data.content | inHtmls}}
+        <!--使用v-html指令绑定html内容的数据-->
+        {{{content.data.content}}}
     </div>
 </template>
 <script type="text/babel">
+    import {getContent} from '../vuex/actions'
+    import {Content} from '../vuex/getters'
     export default{
-        data(){
-            return {
-                detail:{}
+        vuex:{
+            getters:{
+                content:Content
+            },
+            actions:{
+                getContent
             }
         },
+//        data(){
+//            return {
+//                detail:{}
+//            }
+//        },
         created(){
-            debugger;
-            this.fetchDetail(this.$route.params.id)
+//            this.fetchDetail(this.$route.params.id)
+        },
+        ready(){
+            this.getContent(this.$route.params.id)
         },
         methods:{
-            fetchDetail: function(id) {
-
-                var resource = this.$resource('http://cnodejs.org/api/v1/topic/'+id),
-                vm = this;
-                resource.get()
-                        .then((response) => {
-                            debugger;
-                            vm.$set('detail',response.data)
-                        })
-                        .catch(function(response) {
-                            console.log(response)
-                        })
-            }
+//            fetchDetail: function(id) {
+//                let vm = this,
+//                resource = this.$resource('http://cnodejs.org/api/v1/topic/'+id);
+//                resource.get()
+//                        .then((response) => {
+//                            vm.$set('detail',response.data)
+//                        })
+//                        .catch(function(response) {
+//                            console.log(response)
+//                        })
+//            }
 
         }
 

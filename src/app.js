@@ -3,10 +3,8 @@
  */
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-// import VueResource from 'vue-resource'
 import routeConfig from './router'
 import app from './main'
-
 Vue.config.debug=true;
 //使用VueResource
 // Vue.use(VueResource);
@@ -14,7 +12,6 @@ Vue.config.debug=true;
 // Vue.http.options.emulateJSON = true
 // filters
 Vue.filter('inText',require('./filters/htmlToStr'));
-Vue.filter('inHtmls',require('./filters/innerHtml'));
 //使用vuerouter
 Vue.use(VueRouter);
 const router=new VueRouter({

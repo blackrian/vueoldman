@@ -13,4 +13,11 @@ export const getTopics=({dispatch},params)=>{
         dispatch(types.GET_TOPICS_FAIL,err);
     })
 }
+export const getContent=({dispatch},id)=>{
+    api.getContent(id).get().then(response=>{
+        dispatch(types.GET_CONTENT,response.data);
+    },err=>{
+        console.log(err);
+    })
+}
 

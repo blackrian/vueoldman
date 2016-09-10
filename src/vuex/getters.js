@@ -3,3 +3,4 @@
  */
 // export const Topics=(state)=>state.topics.topics
 export const Topics = (state) => state.topics.topics
+export const Content=(state)=>state.content.content
