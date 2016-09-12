@@ -16,7 +16,9 @@
             </div>
         </div>
     </div>
-    <!--<pre>{{topics | json 2}}</pre>-->
+    <div class="old-school">
+
+    </div>
 </template>
 <script type="text/babel">
     import oldItem from '../components/home/oldItem.vue'
@@ -43,8 +45,6 @@
             }
             this.getTopics(params)
         }
-
-
     }
 </script>
 <style lang="sass" scoped>
