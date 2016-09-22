@@ -20,4 +20,8 @@ export const getContent=({dispatch},id)=>{
         console.log(err);
     })
 }
+export const getDrop=({dispatch},item)=>{
+    dispatch(types.GET_DROP_VAL,item)
+}
+
 

@@ -1,5 +1,5 @@
 <template>
-    <div class="join-main">
+    <div class="join-form">
         <h2 class="join-title">欢迎您的加入</h2>
         <p class="join-info">在这里您将遇见更多志同道合的朋友</p>
         <ul>
@@ -30,7 +30,7 @@
         margin-bottom:30px;
         font-family: "Microsoft Yahei";
     }
-    .join-main{
+    .join-form{
         a.btn-join{
             display: block;
             width: 200px;

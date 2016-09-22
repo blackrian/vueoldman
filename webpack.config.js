@@ -61,7 +61,10 @@ module.exports = {
             template: 'index.html',
             inject: true
         }),
-        new ExtractTextPlugin('[hash:8].style.css',{allChunks:true})
+        new ExtractTextPlugin('[hash:8].style.css',{allChunks:true}),
+        new webpack.ProvidePlugin({
+            $:'jquery'
+        })
     ],
     resolve:{
         extensions:['','.js','.vue','scss'],

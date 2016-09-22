@@ -7,3 +7,5 @@ export const GET_TOPICS_SUCCESS = 'GET_TOPICS_SUCCESS'
 export const GET_TOPICS_FAIL = 'GET_TOPICS_FAIL'
 //detail
 export const GET_CONTENT='GET_CONTENT'
+//dropdown
+export const GET_DROP_VAL='GET_DROP_VAL'

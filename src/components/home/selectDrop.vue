@@ -37,8 +37,6 @@
             getters:{
             }
         },
-        motheds:{
-        },
         computed:{
             curName(){
                 let cname;
