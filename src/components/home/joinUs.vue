@@ -5,7 +5,7 @@
         <li class="form-input-item join-item"><input class="ipt-txt" type="text" placeholder="公司"></li>
         <li class="form-input-item join-item"><input class="ipt-txt" type="text" placeholder="手机号"></li>
         <li class="form-input-item join-item"><input class="ipt-txt" type="text" placeholder="邮箱"></li>
-        <li class="form-input-item join-item"><input class="ipt-txt" type="text" placeholder="留言"></li>
+        <li class="form-input-item join-item join-area"><textarea class="txt-area" placeholder="留言"></textarea></li>
     </ul>
     <a class="submit-info">提交信息</a>
 </template>
@@ -24,4 +24,8 @@
         cursor: pointer;
     }
 a.submit-info:hover{ text-decoration: none;background-color: #6fb6a6;}
+    .txt-area{
+         height: 100%; width: 100%; box-sizing: border-box;padding:10px 15px; font-size: 16px; outline: none; resize: none; color: #999; border: 0;
+    }
+    .join-area{ height: 100px; border-radius: 15px; overflow: hidden;}
 </style>
