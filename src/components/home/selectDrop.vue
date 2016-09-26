@@ -36,7 +36,7 @@
             },
             getters:{
             }
-        },
+        },  
         computed:{
             curName(){
                 let cname;
