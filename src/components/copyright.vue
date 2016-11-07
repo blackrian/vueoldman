@@ -10,21 +10,5 @@
 </div>
 </template>
 <style lang="sass" scoped>
-.bottom{
-    height: 90px;line-height: 90px;
-    background-color:#f7f7f7;
-    .copyright{
-        width:1070px;
-        margin:auto;
-        ul{ width: 830px; margin: auto;}
-        li{
-            float: left;
-            font-size: 14px;
-            color: #555;
-            margin:auto 35px;
-            text-align: center;
-        }
-        a{color: #555;}
-    }
-}
+
 </style>

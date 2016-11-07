@@ -1,12 +1,16 @@
 <template>
-    <h1>{{msg}}</h1>
+    <slider></slider>
 </template>
 <script>
+    import slider from '../components/slider/slider_loop.vue'
     export default{
         data(){
             return{
-                msg:"It's travel"
+
             }
+        },
+        components:{
+            slider
         }
     }
 </script>

@@ -1,0 +1,44 @@
+
+%wd-1280{   //宽度1280px;
+  width: 1280px;
+}
+.img-container{
+  @extend %wd-1280;
+  margin: 0 auto;
+  p{
+    width:100%;
+    img{
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+.qs-main{
+  @extend %wd-1280;
+  margin: 20px auto;
+}
+.qs-title{
+  font-size: 24px;
+  font-family: "Microsoft Yahei";
+  line-height: 2em;
+  color: #2c2c2c;
+}
+.ans-content{
+  border: 2px solid #61809a;
+  border-radius:5px;
+  padding: 20px;
+  font-size: 14px;
+}
+.cont-title{
+  display: inline-block;
+  color: #fff;
+  background-color: #d75c3b;
+  height: 32px;
+  line-height: 32px;
+  padding: 0 10px;
+  position: relative;
+  margin-bottom: 5px;
+  margin-top: 15px;
+}
+.cont-title:after{ content: ""; position: absolute; right: -32px;top: 0;
+  border:16px solid #d75c3b; width: 0; border-bottom-color: transparent; border-right-color: transparent; border-top-color: transparent;}

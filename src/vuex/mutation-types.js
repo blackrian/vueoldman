@@ -9,3 +9,6 @@ export const GET_TOPICS_FAIL = 'GET_TOPICS_FAIL'
 export const GET_CONTENT='GET_CONTENT'
 //dropdown
 export const GET_DROP_VAL='GET_DROP_VAL'
+//health
+export const GET_HEALTH='GET_HEALTH'
+export const GET_QUESTION= 'GET_QUESTION'

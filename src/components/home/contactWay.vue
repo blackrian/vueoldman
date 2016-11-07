@@ -16,23 +16,3 @@
 
     }
 </script>
-<style>
-.contact-head{
-    img{ width: 69px; height: 74px; display: block; margin: 50px auto 40px;}
-    h2{ text-align: center; font-size: 35px;color: #434343;}
-    p{ width: 1030px; margin: 20px auto; font-size: 16px; color: #666; font-family: simsun; line-height: 1.8em; padding: 0 30px; box-sizing: border-box}
-}
-.flex-contact{
-    display: flex;
-    width: 830px;
-    margin: 120px auto 60px;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-    .flex-item{ font-size: 20px; color: #666; text-align: center;}
-    .flex-item::before{ content: " "; display: block; width: 80px; height: 80px; margin: 0 auto 30px; background-position: center;}
-    .flex-item-phone::before{ background-image: url("../../assets/icon/icon_phone.png")}
-    .flex-item-news::before{background-image: url("../../assets/icon/icon_news.png")}
-    .flex-item-address::before{ background-image: url("../../assets/icon/icon_map.png")}
-</style>

@@ -1,0 +1,205 @@
+$color3f:#fff;
+$msyh:'Microsoft YaHei';
+//多行显示
+@mixin muti-row($clamp){
+  display: -webkit-box !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:$clamp;
+}
+
+.imghead{
+  height: 500px;
+  background:url("./img/pensioner.png") center;
+  background-size: cover;
+  min-width: 1170px;
+}
+.home-one{ background: #f7f7f7; height: 510px; position: relative;}
+.model-main{ width: 1170px; background: $color3f;
+  position: absolute;
+  top: -80px;left: calc((100% - 1170px)/2); height: 500px;}
+.model-title{
+  margin:20px 30px;
+  h3{ font-size: 26px; font-family: $msyh}
+  p{ font-size: 16px; font-family:'simsun'}
+}
+.model-list{ float: left; width: 810px;}
+.model-form{ float: left; background: #8ccdbe; width: 360px; height: 500px;}
+.old-school{
+  width: 1170px;
+  margin: 0 auto 60px;
+}
+.school-head{
+  img{ width: 44px;height: 57px;
+    display: block;
+    margin:60px auto 30px;}
+  h2{font-size: 35px;
+    text-align: center; font-family: $msyh;
+    color: #434343;
+    margin-bottom:40px;}
+  p{ text-align: center;
+    font-size:16px;}
+}
+.school-item{
+  width:270px;height:180px; background-size:cover; float:left;margin-right:20px; margin-bottom:20px;
+  h3{width: 100%;height: 100%; font-size: 22px; text-align: center;
+    position: relative;z-index: 2;  line-height: 200px; color: $color3f; font-weight: 500}
+  h3:before{ background: #000;opacity: 0.6;content: " ";width: 100%; height: 100%; display: block;
+    position: absolute;z-index: -1;
+    top:0;}
+  .school-icon{
+    display: block;
+    width:50px;
+    height:50px;
+  }
+}
+.school-item:first-child{
+  width: 570px;height: 380px;
+}
+.picwall{
+  background: url("./img/bg_picwall.png") center no-repeat;
+  height: 674px;
+  h3{color: $color3f; font-size: 35px; text-align: center;
+    padding-top:60px; margin-bottom: 10px;}
+  p{ color: $color3f; text-align: center; font-size: 16px;}
+}
+.picwall-box{ overflow: hidden; height: 380px; margin-top: 70px;}
+.picwall-item{float: left; margin-right: 10px;}
+.exam-center{ background-color: #f7f7f7; height: 730px; overflow: hidden;}
+.exam-box{ width: 1170px; margin: 50px auto auto;}
+.exam-item{ float: left; margin-right: 20px;padding-bottom:30px; background-color:$color3f;
+  h3{color:#666;font-size: 18px; padding:5px 10px; font-weight: 700;}
+  p{ font-size: 14px; color: #666; padding: 0 10px;}
+}
+.join-main{
+  background: url("./img/joinbg.png") center no-repeat;
+  background-size: cover; height: 680px;  overflow: hidden;}
+.contact{ height: 700px;}
+.tour{ background-color: #f7f7f7; overflow: hidden;}
+.tour-map{ height: 400px; background-color: #f7f7f7; width: 1170px; margin: 0 auto;}
+.tour-show{ height: 500px;
+  background: url("./img/bg_oldtour.png") center no-repeat;
+  background-size: cover;
+  .tour-public{ width: 1170px; margin: 0 auto;
+    p{ width: 330px; font-size: 38px; color: $color3f;
+      font-family:$msyh;
+      padding-top:175px;
+      margin-left:45px;
+    }
+  }
+}
+.good-health{}
+.health-tip{ width: 1170px; margin: 0 auto; display: block;}
+.health-box{ width: 1170px; margin: 20px auto 50px; height: 380px; overflow: hidden;}
+
+.join-title{
+  font-size: 26px; color: $color3f; text-indent: 1.5em;
+  margin-top:30px; font-family: $msyh;
+}
+.join-info{
+  color: $color3f;
+  font-size:16px;
+  text-indent: 2em;
+  margin-bottom:30px;
+  font-family: $msyh;
+}
+.join-form{
+  a.btn-join{
+    display: block;
+    width: 200px;
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+    background: $color3f;
+    outline: none;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 24px;
+    margin:35px auto;
+    font-size: 16px;
+    color: #8ccdbe;
+    font-weight: 700;
+  }
+  a.btn-join:hover{
+    color: #439884;
+    background-color: #e4e5e5;
+  }
+}
+
+.form-input-item{
+  width: 300px;
+  background: $color3f;
+  margin-bottom: 20px;
+  border-radius:25px;
+  margin-right: auto;
+  margin-left: auto;
+  height:44px;
+  .ipt-txt{
+    height: 24px;
+    margin: 10px auto;
+    width: 100%;
+    border:0px;
+    background: transparent;
+    outline: none;
+    padding:0 20px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #999;
+  }
+}
+
+.contact-head{
+  img{ width: 69px; height: 74px; display: block; margin: 50px auto 40px;}
+  h2{ text-align: center; font-size: 35px;color: #434343;}
+  p{ width: 1030px; margin: 20px auto; font-size: 16px; color: #666; font-family: simsun; line-height: 1.8em; padding: 0 30px; box-sizing: border-box}
+}
+.flex-contact{
+  display: flex;
+  width: 830px;
+  margin: 120px auto 60px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.flex-item{ font-size: 20px; color: #666; text-align: center;}
+.flex-item::before{ content: " "; display: block; width: 80px; height: 80px; margin: 0 auto 30px; background-position: center;}
+.flex-item-phone::before{ background-image: url("./../../assets/icon/icon_phone.png")}
+.flex-item-news::before{background-image: url("./../../assets/icon/icon_news.png")}
+.flex-item-address::before{ background-image: url("./../../assets/icon/icon_map.png")}
+.health-item{ width: 270px; height: 380px; margin-right: 30px; float: left; position: relative;}
+.health-item:last-child{ margin-right: 0;}
+.health-layer{position: absolute;top:0;left: 0; width: 270px;height: 380px; z-index: 9; background-color: rgba(0,0,0,.5); color: $color3f;padding-left:20px; padding-right:20px; box-sizing:border-box;
+  h2{color: $color3f; font-size: 25px; font-family: $msyh;  position: absolute; bottom: 110px;}
+  p{font-size: 14px;font-family:simsun; position: absolute; bottom: 40px;
+    margin-right: 20px;
+    @include muti-row(3);
+  }
+}
+.health-layer{ display: none;}
+.layer-page{display: block;}
+
+
+.join-us-title{text-align: center; font-size: 35px; color: $color3f; margin: 30px auto;}
+.join-item{width:590px;}
+a.submit-info{
+  display: block; width: 186px; text-align: center; height: 50px; line-height: 50px; color: $color3f; font-size: 20px; background-color: #8ccdbe; margin: 50px auto;
+  border-radius: 25px; text-decoration: none;
+  cursor: pointer;
+}
+a.submit-info:hover{ text-decoration: none;background-color: #6fb6a6;}
+.txt-area{
+  height: 100%; width: 100%; box-sizing: border-box;padding:10px 15px; font-size: 16px; outline: none; resize: none; color: #999; border: 0;
+}
+.join-area{ height: 100px; border-radius: 15px; overflow: hidden;}
+.model-item{
+  float: left;
+  width:370px; margin-left:30px;margin-bottom:70px; height:100px;
+  img{float: left; width: 56px; height: 56px;}
+  h2{margin-left: 75px; font-size: 16px; font-weight: 700;
+    @include muti-row(1);}
+  p{ margin-left: 75px; font-size: 16px; height: 75px;
+    @include muti-row(3);}
+}
+

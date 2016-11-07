@@ -4,7 +4,7 @@
         <div class="model-main">
             <div class="model-list">
                 <div class="model-title">
-                    <h3>社区居家养老</h3>
+                    <h3>老人休闲中心</h3>
                     <p>已社区服务中心为依托，整合社区内各种服务资源，为老人提供家政，医疗，休闲，娱乐等服务</p>
                 </div>
                 <div class="model-box">
@@ -19,7 +19,7 @@
     <div class="old-school fn-clear">
         <div class="school-head">
             <img src="../assets/img/school.png" alt="">
-            <h2>老年大学</h2>
+            <h2>培训大学</h2>
         </div>
         <div class="school-box fn-clear">
             <div class="school-item" v-for="item in topics.data" :style="{'background-image': 'url('+ item.author.avatar_url +')'}">
@@ -130,7 +130,7 @@
             let params={
 //                page:1,
 //                tab:'all',
-                limit:5
+                limit:4
             }
             this.getTopics(params)
         },
@@ -139,85 +139,3 @@
         }
     }
 </script>
-<style lang="sass" scoped>
-.imghead{
-    height: 500px;
-    background:url("../assets/img/pensioner.png") center;
-    background-size: cover;
-    min-width: 1170px;
-}
-.home-one{ background: #f7f7f7; height: 510px; position: relative;}
-    .model-main{ width: 1170px; background: #fff;
-        position: absolute;
-        top: -80px;left: calc((100% - 1170px)/2); height: 500px;}
-    .model-title{
-    margin:20px 30px;
-        h3{ font-size: 26px; font-family: "Microsoft Yahei"}
-        p{ font-size: 16px; font-family:'simsun'}
-    }
-.model-list{ float: left; width: 810px;}
-    .model-form{ float: left; background: #8ccdbe; width: 360px; height: 500px;}
-    .old-school{
-        width: 1170px;
-        margin: 0 auto 60px;
-    }
-    .school-head{
-        img{ width: 44px;height: 57px;
-            display: block;
-            margin:60px auto 30px;}
-        h2{font-size: 35px;
-            text-align: center; font-family: "Microsoft Yahei";
-            color: #434343;
-            margin-bottom:40px;}
-        p{ text-align: center;
-            font-size:16px;}
-    }
-.school-item{
-    width:270px;height:180px; background-size:cover; float:left;margin-right:20px; margin-bottom:20px;
-    h3{width: 100%;height: 100%; font-size: 22px; text-align: center;
-        position: relative;z-index: 2;  line-height: 200px; color: #fff; font-weight: 500}
-    h3:before{ background: #000;opacity: 0.6;content: " ";width: 100%; height: 100%; display: block;
-        position: absolute;z-index: -1;
-        top:0;}
-    .school-icon{
-        display: block;
-        width:50px;
-        height:50px;
-    }
-}
-.school-item:first-child{
-    width: 570px;height: 380px;
-}
-    .picwall{  background: url("../assets/img/bg_picwall.png") center no-repeat;
-        height: 674px;
-        h3{color: #fff; font-size: 35px; text-align: center;
-            padding-top:60px; margin-bottom: 10px;}
-        p{ color: #fff; text-align: center; font-size: 16px;}
-    }
-.picwall-box{ overflow: hidden; height: 380px; margin-top: 70px;}
-.picwall-item{float: left; margin-right: 10px;}
-.exam-center{ background-color: #f7f7f7; height: 730px; overflow: hidden;}
-    .exam-box{ width: 1170px; margin: 50px auto auto;}
-    .exam-item{ float: left; margin-right: 20px;padding-bottom:30px; background-color:#fff;
-        h3{color:#666;font-size: 18px; padding:5px 10px; font-weight: 700;}
-        p{ font-size: 14px; color: #666; padding: 0 10px;}
-    }
-.join-main{ background: url("../assets/img/joinbg.png") center no-repeat; background-size: cover; height: 680px;  overflow: hidden;}
-    .contact{ height: 700px;}
-    .tour{ background-color: #f7f7f7; overflow: hidden;}
-    .tour-map{ height: 400px; background-color: #f7f7f7; width: 1170px; margin: 0 auto;}
-.tour-show{ height: 500px; background: url("../assets/img/bg_oldtour.png") center no-repeat; background-size: cover;
-    .tour-public{ width: 1170px; margin: 0 auto;
-        p{ width: 330px; font-size: 38px; color: #fff;
-            font-family:"Microsoft Yahei";
-            padding-top:175px;
-            margin-left:45px;
-        }
-    }
-}
-.good-health{}
-.health-tip{ width: 1170px; margin: 0 auto; display: block;}
-    .health-box{ width: 1170px; margin: 20px auto 50px; height: 380px; overflow: hidden;}
-
-
-</style>

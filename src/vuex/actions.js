@@ -23,5 +23,19 @@ export const getContent=({dispatch},id)=>{
 export const getDrop=({dispatch},item)=>{
     dispatch(types.GET_DROP_VAL,item)
 }
-
+//health page
+export const getHealth=({dispatch})=>{
+    api.getHealth().then(response=>{
+        dispatch(types.GET_HEALTH,response.data)
+    },err=>{
+        console.log(err);
+    })
+}
+export const getQuestion=({dispatch},params)=>{
+    api.getQeustion(params).then(response=>{
+        dispatch(types.GET_QUESTION,response.data)
+    },err=>{
+        console.log(err);
+    })
+}
 
